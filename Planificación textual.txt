@@ -1,0 +1,23 @@
+Quiero hacer en un principio una web main que enganche en los botones las siguientes cosas: Formulario de registro web, foro, la página principal de descargas. Además, quiero poner información con imágenes de cómo surgió el grupo y un tipo de bitácora.
+
+Los colores principales de la página y subpáginas será naranja oscuro, gris muy oscuro y gris normal. También el diseño web debe de seguir ciertos requisitos que me indica la profesora.
+
+Utilidad web: CV, librería de descargas de diferentes librerías a su vez y foro de amigos. El proyecto está diseñado para escalar estos requisitos.
+
+Importante: Con la compra del dominio tengo un certificado SSL, hay que aprovecharlo. Se desplegará el servicio con Apache2 en Docker, y el servidor será gestionado por container.io (Docker). El servidor estará blindado en cuanto a seguridad, en el ufw solo estarán abiertos los puertos 22 (ssh), 445 (https) y 25525 (Juegos).
+
+Se deberá volver a particionar el disco adecuadamente (480 GB). Decisión sin tomar.
+
+Diseño general de las páginas principales:
+
+-index.html: Imágenes y links sobre temas
+-foro.html: Foro de amigos donde cualquiera pueda leer pero pocos escribir. Conectada a una base de datos.
+-founders.html: Página de los que trabajaron en la página, información del proceso de creación de la página y estilo cv, con links a     algunas redes sociales. Opcional.
+-formulario-registro: Formulario para registrarse en la web. Base de datos requerida.
+-main_downloads: Página main de subpáginas de descarga, estilo visual tipo cuadrados interactuables con texto indicando a qué subpágina de  descarga lleva.
+
+Bases de datos:
+
+Vamos a necesitar una base de datos para los siguientes funciones: foro, cuentas registradas.
+
+En el menú desplegable los links que habrán serán aleatorios, con funciones secundarias. Algunas ideas que poner en los links sería una función de link aleatorio en el que fuese un "rickroll", una ruleta aleatoria (estilo https://es.piliapp.com/random/wheel/), un link a una lista de Spotify de Fase Alterna (devolviendo favores).
