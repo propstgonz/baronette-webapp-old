@@ -37,7 +37,7 @@ body {
 }
 
 .btn-custom {
-    background-color: #007bff;
+    background-color: #516e85;
     color: white;
     border-radius: 50px;
     padding: 10px;
@@ -45,12 +45,13 @@ body {
 }
 
 .btn-custom:hover {
-    background-color: #0056b3;
+    background-color: #6C757D;
 }
 
 .form-text {
     text-align: center;
     margin-top: 20px;
+    color: white;
 }
 
 .form-text a {
