@@ -3,46 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Baronette.es</title>
+    <title>Baronette</title>
     <!--Favicon-->
-    <link rel="icon" href="img/barologo.ico" type="image/x-icon">
-    <!-- Bootstrap CSS -->
+    <link rel="icon" href="assets/images/barologo.ico" type="image/x-icon">
+    <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        /* Color de fondo de la barra de navegación */
         .navbar {
-            background-color: #D35400; /* Naranja oscuro */
+            background-color: #a2784e;
         }
 
-        /* Color de fondo del footer */
         .offcanvas-footer {
-            background-color: grey; /* Gris claro */
+            background-color: #9ca09d;
         }
 
-        /* Mover la página hacia la derecha cuando el menú esté abierto */
         .offcanvas-open .container {
-            transform: translateX(150px); /* Ajusta este valor para el desplazamiento */
+            transform: translateX(150px);
             transition: transform 0.3s ease;
         }
 
-        /* Ajuste de espaciado para los botones */
         .button-group {
             margin-bottom: 2rem;
         }
 
         .container {
-            padding-top: 4vh; /* Subir los botones un 40% más arriba */
+            padding-top: 4vh;
         }
 
         .button-group {
-            margin-bottom: 3vh; /* Ajuste del margen inferior de los botones */
+            margin-bottom: 3vh;
         }
 
         h1 {
-            margin-top: 3vh; /* Ajuste del margen superior para mantener distancia entre los botones y el H1 */
+            margin-top: 3vh;
         }
 
-        /* Asegurar que el widget esté en la parte inferior del menú desplegable */
         .offcanvas-body {
             display: flex;
             flex-direction: column;
@@ -50,98 +45,91 @@
             height: 100%;
         }
 
-        /* Ajuste del espacio para el widget de Discord */
         .discord-widget {
-            margin-top: auto; /* Colocar el widget en la parte inferior del contenido */
-            max-width: 100%; /* Asegura que el widget no sobresalga */
-            overflow: hidden; /* Evita que el contenido sobresalga */
+            margin-top: auto;
+            max-width: 100%;
+            overflow: hidden;
         }
 
         iframe {
-            width: 100%; /* Hace que el iframe se ajuste al contenedor */
-            height: 500px; /* Mantiene la altura del iframe */
-            border: none; /* Sin borde */
+            width: 100%;
+            height: 500px;
+            border: none;
         }
 
-        /* Mostrar siempre el botón del menú en todas las pantallas */
         .navbar-toggler {
-            display: block !important; /* Asegura que el botón siempre esté visible */
+            display: block !important;
         }
 
-        /* Ajustes para pantallas pequeñas */
         @media (max-width: 768px) {
             .container {
-                padding-top: 2vh; /* Reducir el padding superior en móviles */
+                padding-top: 2vh;
             }
 
             .button-group {
-                margin-bottom: 2vh; /* Reducir margen inferior entre botones y texto en móviles */
+                margin-bottom: 2vh;
             }
 
             h1 {
-                margin-top: 2vh; /* Ajuste del margen superior para mantener equilibrio en móviles */
+                margin-top: 2vh;
             }
         }
     </style>
 </head>
-<body data-bs-theme="dark"> <!-- Activar modo oscuro desde el inicio -->
-<!-- Navbar -->
+<body data-bs-theme="dark">
 <nav class="navbar navbar-expand-lg navbar-light">
   <div class="container-fluid">
-    <!-- Botón del menú desplegable -->
+    <!--Botón del menú desplegable-->
     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
       <span class="navbar-toggler-icon"></span>
     </button>
-     <!-- Título centrado -->
     <a class="navbar-brand mx-auto text-white" href="#">Baronette.es</a>
-    <!-- Logo y botón de modo claro/oscuro -->
+    <!--Botón de modo claro/oscuro-->
     <div class="d-flex align-items-center">
+      <!--Logo de página-->
       <a href="#" class="me-3">
-        <img src="img/barologo.ico" alt="Logo" width="40" height="40">
+        <img src="assets/images/barologo.ico" alt="Logo" width="40" height="40">
       </a>
       <button id="toggleTheme" class="btn btn-outline-light">Modo claro</button>
     </div>
   </div>
 </nav>
-<!-- Menú lateral (offcanvas) -->
+<!--Menú lateral-->
 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
   <div class="offcanvas-header">
     <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menú de navegación</h5>
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body">
-    <!-- Links a subpáginas -->
+    <!--Subpáginas-->
     <ul class="list-unstyled">
       <li><a href="#" class="nav-link">Subpágina 1</a></li><br>
       <li><a href="#" class="nav-link">Subpágina 2</a></li><br>
       <li><a href="#" class="nav-link">Subpágina 3</a></li><br>
       <li><a href="#" class="nav-link">Subpágina 4</a></li><br>
     </ul>
-    <!-- Widget de Discord en la parte inferior -->
+    <!--Widget-->
     <div class="discord-widget mt-4">
       <iframe src="https://discord.com/widget?id=1008056714395930724&theme=dark" allow></iframe>
     </div>
   </div>
-    <!-- Footer dentro del menú desplegable -->
+    <!-- Footer-->
   <div class="offcanvas-footer p-3 text-center">
     <p>Contacto y Maps</p>
   </div>
 </div>
-<!-- Contenido principal con 3 botones y centrado -->
 <div class="container d-flex justify-content-center align-items-start" style="min-height: 80vh;">
   <div class="text-center">
-    <!-- Botones -->
     <div class="button-group mb-4">
       <button class="btn btn-primary me-2">Botón 1</button>
       <button class="btn btn-primary me-2">Botón 2</button>
       <button class="btn btn-primary">Botón 3</button>
     </div>
-    <!-- Texto -->
     <h1>Baronette</h1>
     <p>Haría el chiste, pero ahora es un entorno SFW semi-profesional</p>
   </div>
 </div>
-<!-- Bootstrap JS -->
+<!--Bootstrap JS-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 <script>
     // Toggle entre temas claro y oscuro
