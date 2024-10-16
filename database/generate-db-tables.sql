@@ -8,6 +8,7 @@ CREATE TABLE public.user_list (
     username varchar NOT NULL,
     user_password varchar NOT NULL,
     email varchar NOT NULL,
+    verified bool DEFAULT false,
     CONSTRAINT user_pk PRIMARY KEY (id),
     CONSTRAINT user_username UNIQUE (username),
     CONSTRAINT user_email UNIQUE (email)
