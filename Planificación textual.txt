@@ -21,3 +21,35 @@ Bases de datos:
 Vamos a necesitar una base de datos para los siguientes funciones: foro, cuentas registradas.
 
 En el menú desplegable los links que habrán serán aleatorios, con funciones secundarias. Algunas ideas que poner en los links sería una función de link aleatorio en el que fuese un "rickroll", una ruleta aleatoria (estilo https://es.piliapp.com/random/wheel/), un link a una lista de Spotify de Fase Alterna (devolviendo favores).
+
+-------------------------------------------------------------------------------
+
+Base de datos de usuarios:
+tabla user_list:
+    - se añaden registros mediante el formulario de registro. Estos registros
+      reciben un id único y el campo verified en False.
+    - Un administrador deberá marcar verified en true para que el usuario
+      oueda acceder al portal.
+
+tabla admin_list:
+    - recoge lista de administradores. reciben un admin_id único asociado a 
+      su user_id. Mediante el portal de administración, podrán modificar
+      el valor del campo verified del resto de usuarios.
+
+API
+Comunica el servicio web con la base de datos.
+    - Cuando un usuario se registra en el portal, deberá enviar los datos
+      que rellenó el usuario a la tabla user_list.
+    - Cuando un usuario trate de conectarse al portal, deberá comprobar que
+      dicho usuario está registrado, y comprobar si está verificado. Si lo
+      está, debe dejar acceder al usuario al portal. Si no, debe notificar al
+      usuario un mensaje de error en la pantalla de login.
+    - Cuando un usuario entre en la pestaña "settings" deberá comprobar si ese
+      usuario pertenece a la lista de administradores mediante el id. Si es un
+      admin, el portal deberá mostrar además un acceso a "verificar usuarios"
+    - Si el usuario modifica algún dato de su registro, se debe modificar la
+      entrada correspondiente al usuario en la base de datos y cambiar el
+      estado de verified a false y automáticamente debe cerrarse su sesión. Si
+      el usuario es administrador, el campo verified debe continuar en true.
+
+-------------------------------------------------------------------------------
