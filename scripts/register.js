@@ -10,5 +10,5 @@ form.addEventListener('submit', function(event) {
         event.preventDefault(); //
         alert('Registro exitoso, redirigiendo a la página de confirmación.');
         window.location.href = "post-register.html";
-    }
+}
 });
