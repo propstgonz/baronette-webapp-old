@@ -1,69 +1,70 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Baronette</title>
-    <!--Favicon-->
+    <!-- Favicon -->
     <link rel="shortcut icon" href="assets/images/barologo.ico" type="image/x-icon">
-    <!--Bootstrap-->
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
+
 <body data-bs-theme="dark">
-<nav class="navbar navbar-expand-lg navbar-light">
-  <div class="container-fluid">
-    <!--Botón del menú desplegable-->
-    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <a class="navbar-brand mx-auto text-white" href="#">Baronette.es</a>
-    <!--Botón de modo claro/oscuro-->
-    <div class="d-flex align-items-center">
-      <!--Logo de página-->
-      <a href="#" class="me-3">
-        <img src="assets/images/barologo.ico" alt="Logo" width="40" height="40">
-      </a>
-      <button id="toggleTheme" class="btn btn-outline-light">Modo claro</button>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <!-- Botón del menú desplegable -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
+                aria-controls="offcanvasMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand mx-auto text-white" href="#">Baronette.es</a>
+            <!-- Botón de modo claro/oscuro -->
+            <div class="d-flex align-items-center">
+                <!-- Logo de página -->
+                <a href="#" class="me-3">
+                    <img src="assets/images/barologo.ico" alt="Logo" width="40" height="40">
+                </a>
+                <button id="toggleTheme" class="btn btn-outline-light">Modo claro</button>
+            </div>
+        </div>
+    </nav>
+    <!-- Menú lateral -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menú de navegación</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <!-- Subpáginas -->
+            <ul class="list-unstyled">
+                <li><a href="#" class="nav-link">Subpágina 1</a></li><br>
+                <li><a href="#" class="nav-link">Subpágina 2</a></li><br>
+                <li><a href="#" class="nav-link">Subpágina 3</a></li><br>
+                <li><a href="#" class="nav-link">Subpágina 4</a></li><br>
+            </ul>
+            <!-- Widget -->
+            <div class="discord-widget mt-4">
+                <iframe src="https://discord.com/widget?id=1008056714395930724&theme=dark" allow></iframe>
+            </div>
+        </div>
+        <!-- Footer -->
+        <div class="offcanvas-footer p-3 text-center">
+            <p>Contacto y Maps</p>
+        </div>
     </div>
-  </div>
-</nav>
-<!--Menú lateral-->
-<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menú de navegación</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-    <!--Subpáginas-->
-    <ul class="list-unstyled">
-      <li><a href="#" class="nav-link">Subpágina 1</a></li><br>
-      <li><a href="#" class="nav-link">Subpágina 2</a></li><br>
-      <li><a href="#" class="nav-link">Subpágina 3</a></li><br>
-      <li><a href="#" class="nav-link">Subpágina 4</a></li><br>
-    </ul>
-    <!--Widget-->
-    <div class="discord-widget mt-4">
-      <iframe src="https://discord.com/widget?id=1008056714395930724&theme=dark" allow></iframe>
+
+    <div class="container d-flex justify-content-center align-items-start" style="min-height: 60vh; padding-top: 40px;">
+        <div class="text-center">
+            <h1>Baronette</h1>
+            <p>Haría el chiste, pero ahora es un entorno SFW semi-profesional</p>
+        </div>
     </div>
-  </div>
-    <!-- Footer-->
-  <div class="offcanvas-footer p-3 text-center">
-    <p>Contacto y Maps</p>
-  </div>
-</div>
-<div class="container d-flex justify-content-center align-items-start" style="min-height: 80vh;">
-  <div class="text-center">
-    <div class="button-group mb-4">
-      <button class="btn btn-primary me-2">Botón 1</button>
-      <button class="btn btn-primary me-2">Botón 2</button>
-      <button class="btn btn-primary">Botón 3</button>
-    </div>
-    <h1>Baronette</h1>
-    <p>Haría el chiste, pero ahora es un entorno SFW semi-profesional</p>
-  </div>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-<script src="scripts/main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
+
 </html>
