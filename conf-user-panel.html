@@ -129,28 +129,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <!-- Fila con los registros -->
-                                    <tr>
-                                        <td><input type="text" class="form-control-plaintext" readonly value="John"></td>
-                                        <td><input type="text" class="form-control-plaintext" readonly value="Doe"></td>
-                                        <td><input type="text" class="form-control-plaintext" readonly value="Smith"></td>
-                                        <td><input type="text" class="form-control-plaintext" readonly value="johnsmith"></td>
-                                        <td><input type="email" class="form-control-plaintext" readonly value="john@example.com"></td>
-                                        <td class="text-center">
-                                            <input type="checkbox" class="form-check-input">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><input type="text" class="form-control-plaintext" readonly value="Jane"></td>
-                                        <td><input type="text" class="form-control-plaintext" readonly value="Doe"></td>
-                                        <td><input type="text" class="form-control-plaintext" readonly value="Johnson"></td>
-                                        <td><input type="text" class="form-control-plaintext" readonly value="janejohnson"></td>
-                                        <td><input type="email" class="form-control-plaintext" readonly value="jane@example.com"></td>
-                                        <td class="text-center">
-                                            <input type="checkbox" class="form-check-input">
-                                        </td>
-                                    </tr>
-                                    <!-- Agrega más filas según sea necesario -->
+                                    <!-- Las filas se generan en el script settings.js -->
                                 </tbody>
                             </table>
                         </div>
@@ -158,8 +137,8 @@
                 </div>
             </div>
             <div>
-                <button class="btn btn-primary mb-4">Validar usuarios</button>
-                <button class="btn btn-primary mb-4">Actualizar lista</button>
+                <button class="btn btn-primary mb-4" id="validateUsersButton">Validar usuarios</button>
+                <button class="btn btn-primary mb-4" id="updateListButton">Actualizar lista</button>
             </div>
             <!-- Cuadro de texto desplegable con búsqueda de usuarios -->
             <div class="form-group">
@@ -178,7 +157,7 @@
                 <button type="button" class="btn btn-danger mb-4">Eliminar Usuario</button>
             </div>
         </div>
-        </div>
+</div>
 <!--Scrips JS-->
     <script>
         // Inicializar Select2 para habilitar la búsqueda en el desplegable
