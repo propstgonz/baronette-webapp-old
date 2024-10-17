@@ -3,7 +3,7 @@ const form = document.querySelector('#registerForm');
 form.addEventListener('submit', async function(event) {
     event.preventDefault(); // Prevenir el comportamiento por defecto
 
-    const user_password = document.getElementById('password').value;
+    const user_password = document.getElementById('user_password').value;
     const confirm_password = document.getElementById('confirm_password').value;
     const first_name = document.getElementById('first_name').value;
     const last_name_1 = document.getElementById('last_name_1').value;
