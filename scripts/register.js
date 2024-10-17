@@ -23,14 +23,18 @@ form.addEventListener('submit', async function(event) {
         return;
     }
 
-    // Preparar los datos para el envío
+    /* Preparar los datos para el envío
+     * Hay que cambiar el orden de la lista porque en la db están cruzados
+     * los campos user_password y email respecto a el orden en el que
+     * se introducen en el formulario de registro
+     */
     const data = {
         first_name,
         last_name_1,
         last_name_2,
         username,
-        email,
-        user_password
+        user_password,
+        email
     };
 
     try {
