@@ -3,35 +3,34 @@ const form = document.querySelector('#registerForm');
 form.addEventListener('submit', async function(event) {
     event.preventDefault(); // Prevenir el comportamiento por defecto
 
-    const password = document.getElementById('password').value;
-    const confirmPassword = document.getElementById('confirm-password').value;
-    const name = document.getElementById('name').value;
+    const user_password = document.getElementById('password').value;
+    const confirm_password = document.getElementById('confirm_password').value;
+    const first_name = document.getElementById('first_name').value;
     const last_name_1 = document.getElementById('last_name_1').value;
     const last_name_2 = document.getElementById('last_name_2').value;
     const username = document.getElementById('username').value;
     const email = document.getElementById('email').value;
 
     // Validación de contraseñas
-    if (password !== confirmPassword) {
+    if (user_password !== confirm_password) {
         alert('Las contraseñas no coinciden.');
         return;
     }
 
     // Validar que los campos requeridos no estén vacíos (opcional)
-    if (!name || !last_name_1 || !username || !email || !password) {
+    if (!first_name || !last_name_1 || !username || !email || !user_password) {
         alert('Por favor, complete todos los campos obligatorios.');
         return;
     }
 
     // Preparar los datos para el envío
     const data = {
-        name,
+        first_name,
         last_name_1,
         last_name_2,
         username,
         email,
-        user_password: password,
-        confirm_password: confirmPassword
+        user_password
     };
 
     try {
