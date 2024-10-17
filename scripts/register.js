@@ -17,7 +17,7 @@ form.addEventListener('submit', async function(event) {
         return;
     }
 
-    // Validar que los campos requeridos no estén vacíos (opcional)
+    // Validar que los campos requeridos no estén vacíos
     if (!first_name || !last_name_1 || !username || !email || !user_password) {
         alert('Por favor, complete todos los campos obligatorios.');
         return;
