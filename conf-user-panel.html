@@ -60,7 +60,7 @@
         </div>
     </div>
 <!--Aquí insertar el contenido de la página-->
-    <h1> Este es tu espacio, <a>@user</a></h1>
+    <h1>Este es tu espacio, <a id="user-name-label"></a></h1>
 <!-- Panel de usuario -->
 <div class="container mt-5">
     <div class="card p-4">
@@ -108,7 +108,7 @@
         <button class="btn btn-danger w-100">Eliminar Cuenta</button>
     </div>
 </div>
-<div class="container mt-5" id="admin-panel">
+<div class="container mt-5" id="admin-panel" hidden>
         <div class="card p-4">
             <h3 class="card-title">Panel de administración</h3>
             <div class="mb-3">
@@ -137,8 +137,8 @@
                 </div>
             </div>
             <div>
-                <button class="btn btn-primary mb-4" id="validateUsersButton">Validar usuarios</button>
-                <button class="btn btn-primary mb-4" id="updateListButton">Actualizar lista</button>
+                <button class="btn btn-primary mb-4" id="validateUsersButton" disabled>Validar usuarios</button>
+                <button class="btn btn-primary mb-4" id="updateListButton" disabled>Actualizar lista</button>
             </div>
             <!-- Cuadro de texto desplegable con búsqueda de usuarios -->
             <div class="form-group">
@@ -151,7 +151,7 @@
 
             <!-- Botón "eliminar usuario" -->
             <div class="form-group text-left">
-                <button type="button" class="btn btn-danger mb-4">Eliminar Usuario</button>
+                <button type="button" class="btn btn-danger mb-4" id="del-user-btn" disabled>Eliminar Usuario</button>
             </div>
         </div>
 </div>
