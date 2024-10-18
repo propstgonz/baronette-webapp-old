@@ -81,13 +81,17 @@ async function deleteSelectedUser() {
     }
 
     try {
-        const response = await fetch(`http://localhost:3000/api/delete-user/${selectedUser}`, {method: 'DELETE',});
+        const response = await fetch(`http://localhost:3000/api/delete-user/${selectedUser}`,
+            {
+                method: 'DELETE', headers: {'Content-Type': 'application/json',}
+            }
+        );
 
         const data = await response.json();
 
         if (response.ok) {
             alert(data.message);
-            loadVerifiedUsers();
+            await loadVerifiedUsers();
         } else{
             alert(data.message || 'Error al eliminar el usuario');
         }
