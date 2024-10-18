@@ -6,7 +6,7 @@
     <title>Baronette</title>
     <!--Favicon-->
     <link rel="shortcut icon" href="assets/images/barologo.ico" type="image/x-icon">
-    <!-- Bootstrap -->
+    <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <!--CSS propio-->
     <link rel="stylesheet" href="assets/css/main.css">
@@ -49,19 +49,68 @@
                 <iframe src="https://discord.com/widget?id=1008056714395930724&theme=dark" allow></iframe>
             </div>
         </div>
-        <!-- Footer -->
-        <div class="offcanvas-footer p-3 text-center">
-            <p>Contacto y Maps</p>
+    </div>
+    <!-- Widget de tiempo en La Coruña -->
+    <div class="weather-widget-oneweather">
+        <div id="ww_879f829277b9f" v='1.3' loc='id' a='{"t":"responsive","lang":"es","sl_lpl":1,"ids":["wl6526"],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"#000000","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722","cl_odd":"#FFFFFF17","sl_tof":"3"}'>
+            Más previsiones: <a href="https://oneweather.org/es/madrid/25_days/" id="ww_879f829277b9f_u" target="_blank">Tiempo 25 días</a>
+        </div>
+        <script async src="https://app3.weatherwidget.org/js/?id=ww_879f829277b9f"></script>
+    </div>    
+    </nav>
+<!-- Contenido de la página -->
+<div class="container d-flex flex-column justify-content-center align-items-start" style="min-height: 60vh; padding-top: 40px;">
+    <div class="text-center">
+        <h1>Baronette</h1>
+        <img src="assets/images/barocuadro.jpg" alt="barocuadro" style="width: 20%; height: auto;"><br><br>
+        <p>Haría el chiste, pero ahora es un entorno SFW semi-profesional (No me lo creo ni yo)</p>
+    </div>
+    <div style="margin-left: 1%;">
+        <h1>- ¿Qué es esta página y cómo surgió?</h1>
+        <div style="margin-left: 3%;" class="textaco-1">
+            <p class="text-justified">Básicamente inicialmente fue un proyecto de bromas con mis amigos, ya que como me aburría mucho este verano, 
+                hice limpieza profunda en mi habitación, me encontré los componentes y algunos restos de mi antiguo ordenador,
+                así que lo monte, le instalé Debian 12 y empecé a cacharrear con él. Y mientras una vez reinstalaba Debian porque me cargué algo,
+                vi "servicio web" como una de las opciones y me surgió la idea, y además había comprado un dominio por probar qué podría hacer con él.
+                De ahí llamé a mi amigo "Patinni" (No voy a dar nombres reales) y empezamos a hacer la primera versión, 
+                que simplemente era una plantilla modificada por él que era totalmente de bromas.
+                <br><br>
+                Tras ello y seguir cacharreando, modifiqué varias veces esa página por mí mismo para que estuviese más a mi gusto,
+                pero como no me llegaba a convencer y ya estaba obteniendo conocimientos de HTML, decidí que haría una nueva versión
+                completamente nueva, pero siempre me dio pereza, hasta que tuve un proyecto en mi instituto de "Aplicaciones Web" y de 
+                ahí decidí aprovechar la ocasión, también fue cuando además llamé a Mezzenas, para que me ayudase a poner en práctica las
+                ideas que tenía para la página web. <br><br> El único problema es que era un senior que llevaba equipos, por lo que era bastante
+                exigente con la calidad del proyecto, y además tuve que excederme mucho del proyecto original de clase manteniendo todo
+                lo del proyecto inicial del "rework" de mi página web más algunas funciones que no había planeado que vinieron mientras
+                se desarrollaba esta página, como un módulo de "Laboratorio virtual", para poder experimentar con diversas cosas, o un
+                panel de usuarios, yo ya tenía planeado un sistema de cuentas, pero no uno tan complejo, tanto que tuvimos que recurrir
+                varias veces a ChatGPT para que nos ayudase, ya que desde ese panel, si eres administrador, puedes administrar los usuarios
+                sin la necesidad de entrar a las bases de datos. <br><br>
+                Es un proyecto que ha tomado varios días de trabajo continuo, donde he estado días trabajando en esta página 11 horas, y 
+                tengo planeado expandirla con el tiempo, ya que inicialmente las páginas fueron hechas a partir de una plantilla
+                que diseñé para poder escalarla con el tiempo de ser necesario y fuese fácil para actualizar las demás páginas,
+                además que la mayoría de cambios las puedo hacer simplemente modificando el CSS. <br> <br> Mis planes para esta 
+                página son añadirle muchos más módulos, para convertirla en una herramienta para mí y algunos amigos, además como
+                CV, ya que así puedo demostrar un poco mis conocimientos, ya que además todo está subido en <a href="https://github.com/Propstg206">GitHub</a>.
+            </p>
         </div>
     </div>
-    <!--Contenido de la página-->
-    <div class="container d-flex justify-content-center align-items-start" style="min-height: 60vh; padding-top: 40px;">
-        <div class="text-center">
-            <h1>Baronette</h1>
-            <p>Haría el chiste, pero ahora es un entorno SFW semi-profesional</p>
-        </div>
+</div>
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-content">
+        <p>Licencia MIT. Todos los derechos reservados.</p>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="https://github.com/Propstg206">Repositorio de GitHub</a></li>
+            <li class="list-inline-item"><a href="https://es.wikipedia.org/wiki/Licencia_MIT">Información de licencia</a></li>
+            <li class="list-inline-item"><a href="mailto:alexpropstg@gmail.com">Contacto</a></li>
+        </ul>
     </div>
-
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12401.707657363246!2d125.72661880911906!3d39.005573910591146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357e1b19cf2a008b%3A0xe34e794c30dde06!2sPyongyang%20Motor%20Factory!5e0!3m2!1ses!2ses!4v1729114240523!5m2!1ses!2ses" 
+            style="border:0; height: 100%; width: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="scripts/main.js"></script>
 </body>
