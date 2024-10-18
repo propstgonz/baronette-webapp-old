@@ -11,7 +11,6 @@
 .offcanvas-body ul li {
     margin-bottom: 1rem;
 }
-
 .button-group {
     margin-bottom: 2rem;
 }
@@ -143,4 +142,23 @@ body {
 }
 .container {
     flex: 1;
+}
+
+figure {
+    position: absolute;
+    top: 40%;
+    right: 15%;
+    width: 30%;
+    margin: 0;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+}
+
+figure figcaption {
+    font-size: 12px;
+    text-align: center;
+    color: gray;
 }
