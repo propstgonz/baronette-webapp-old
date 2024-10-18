@@ -1,12 +1,59 @@
 document.addEventListener('DOMContentLoaded', displayUserName);
 document.addEventListener('DOMContentLoaded', getAdminAccess);
+document.getElementById('btn-update-info').addEventListener('click', updateUserInfo);
+
+
+// Función para actualizar la información del usuario
+async function updateUserInfo() {
+    const userId = await getUserID();
+    const firstName = document.getElementById('firstName').value;
+    const lastName1 = document.getElementById('lastName1').value;
+    const lastName2 = document.getElementById('lastName2').value;
+    const email = document.getElementById('email').value;
+
+    const updatedInfo = {};
+    if (userId) updatedInfo.user_id = userId;
+    if (firstName) updatedInfo.first_name = firstName;
+    if (lastName1) updatedInfo.last_name1 = lastName1;
+    if (lastName2) updatedInfo.last_name2 = lastName2;
+    if (email) updatedInfo.email = email;
+
+    if (Object.keys(updatedInfo).length === 0) {
+        alert('No se ha proporcionado información para actualizar.');
+        return;
+    }
+
+    try {
+        const response = await fetch(`http://localhost:3000/api/update-user/${userId}`, {
+            method: 'PATCH',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(updatedInfo),
+        });
+
+        const data = await response.json();
+
+        if (response.ok) {
+            alert('Información actualizada con éxito.');
+        } else {
+            alert(data.message || 'Error al actualizar la información.');
+        }
+    } catch (error){
+        console.error('Error:', error);
+        alert('Error al intentar actualizar la información.');
+    }
+    
+}
 
 
 // función para escribir el nombre de usuario en el panel principal
 function displayUserName() {
     const userName = localStorage.getItem('user_name');
+    const usernameInput = document.getElementById('username');
     if (userName) {
         document.getElementById('user-name-label').textContent = userName;
+        usernameInput.value = userName;
     } else {
         console.log('No se encontró el nombre de usuario en localStorage.');
     }
@@ -16,7 +63,8 @@ function displayUserName() {
 async function getUserID() {
     const userId = localStorage.getItem('user_id');
     if (!userId) {
-        return null;
+        window.location.href = 'login.html';
+        return;
     }
     return userId;
 };
@@ -35,10 +83,6 @@ async function getAdminAccess() {
     try {
         const userId = await getUserID();
         
-        if (!userId) {
-            window.location.href = 'login.html';
-            return;
-        }
         // Llamada a la API para verificar si el usuario es administrador
         const response = await fetch('http://localhost:3000/api/settings', {
             method: 'POST',
@@ -204,10 +248,7 @@ async function loadVerifiedUsers() {
 async function deleteAccount() {
     try {
         const userId = await getUserID();
-        if (!userId) {
-            window.location.href = 'login.html';
-            return;
-        }
+
         const response = await fetch('http://localhost:3000/api/delete-account', {
             method: 'DELETE',
             headers: {
