@@ -61,7 +61,7 @@
         </div>
     </div>
 <!--Aquí insertar el contenido de la página-->
-    <h1>Este es tu espacio, <a id="user-name-label"></a></h1>
+    <h1>Este es tu espacio, <a class="user-name-label"></a></h1>
 <!-- Panel de usuario -->
     <div class="container mt-5">
         <div class="card p-4">
@@ -69,7 +69,7 @@
 
             <div class="mb-3">
                 <label for="username" class="form-label">Nombre de Usuario</label>
-                <input type="text" class="form-control" id="username" placeholder="Nombre de Usuario">
+                <input type="text" class="form-control" id="username" value="" readonly>
             </div>
             <div class="mb-3">
                 <label for="firstName" class="form-label">Nombre</label>
@@ -88,7 +88,7 @@
                 <input type="email" class="form-control" id="email" placeholder="Email">
             </div>
             <!-- Botón actualizar información -->
-            <button class="btn btn-primary mb-4">Actualizar Información</button>
+            <button class="btn btn-primary mb-4" id="btn-update-info">Actualizar Información</button>
             <!-- Contenedor cambiar contraseña -->
             <div class="border p-3 rounded mb-4">
                 <legend class="w-auto px-2">Cambiar Contraseña</legend>
