@@ -1,6 +1,45 @@
 document.addEventListener('DOMContentLoaded', displayUserName);
 document.addEventListener('DOMContentLoaded', getAdminAccess);
 document.getElementById('btn-update-info').addEventListener('click', updateUserInfo);
+document.getElementById('btn-update-pwd').addEventListener('click', updatePassword);
+
+// Función para actualizar la contraseña del usuario
+async function updatePassword() {
+    const userId = await getUserID();
+    const currentPassword = document.getElementById('currentPassword').value;
+    const newPassword = document.getElementById('newPassword').value;
+
+    if (!currentPassword || !newPassword) {
+        alert('Por favor, completa ambos campos.');
+        return;
+    }
+
+    const payload = {
+        currentPassword,
+        newPassword
+    };
+
+    try {
+        const response = await fetch(`http://localhost:3000/api/change-password/${userId}`, {
+            method: 'PATCH',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(payload),
+        });
+
+        const data = await response.json();
+
+        if (response.ok) {
+            alert('Contraseña actualizada con éxito.');
+        } else {
+            alert(data.message || 'Error al actualizar la contraseña.');
+        }
+    } catch (error) {
+        console.error('Error:', error);
+        alert('Error al intentar cambiar la contraseña.');
+    }
+}
 
 
 // Función para actualizar la información del usuario
