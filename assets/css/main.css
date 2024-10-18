@@ -17,8 +17,8 @@
 }
 .container {
     flex: 1;
-    padding-top: 4vh;
-    padding-bottom: 0;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 .button-group {
     margin-bottom: 3vh;
