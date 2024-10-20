@@ -1,9 +1,19 @@
-const mainModel = require('./main')
-
 document.addEventListener('DOMContentLoaded', displayUserName);
 document.addEventListener('DOMContentLoaded', getAdminAccess);
 document.getElementById('btn-update-info').addEventListener('click', updateUserInfo);
 document.getElementById('btn-update-pwd').addEventListener('click', updatePassword);
+
+
+// Función para obtener el user_id almacenado en localStorage
+async function getUserID() {
+    const userId = localStorage.getItem('user_id');
+    if (!userId) {
+        window.location.href = 'login.html';
+        return;
+    }
+    return userId;
+};
+
 
 // Función para actualizar la contraseña del usuario
 async function updatePassword() {
