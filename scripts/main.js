@@ -1,3 +1,6 @@
+document.addEventListener('DOMContentLoaded', getUserID);
+
+
 const toggleButton = document.getElementById('toggleTheme');
 toggleButton.addEventListener('click', function() {
     const currentTheme = document.body.getAttribute('data-bs-theme');
@@ -33,3 +36,14 @@ document.addEventListener('DOMContentLoaded', async function() {
         return;
     }
 });
+
+
+// Función para obtener el user_id almacenado en localStorage
+async function getUserID() {
+    const userId = localStorage.getItem('user_id');
+    if (!userId) {
+        window.location.href = 'login.html';
+        return;
+    }
+    return userId;
+};

@@ -1,3 +1,5 @@
+const mainModel = require('./main')
+
 document.addEventListener('DOMContentLoaded', displayUserName);
 document.addEventListener('DOMContentLoaded', getAdminAccess);
 document.getElementById('btn-update-info').addEventListener('click', updateUserInfo);
@@ -97,16 +99,6 @@ function displayUserName() {
         console.log('No se encontró el nombre de usuario en localStorage.');
     }
 }
-
-// Función para obtener el user_id almacenado en localStorage
-async function getUserID() {
-    const userId = localStorage.getItem('user_id');
-    if (!userId) {
-        window.location.href = 'login.html';
-        return;
-    }
-    return userId;
-};
 
 
 // Función para habilitar los botones del panel de administración
