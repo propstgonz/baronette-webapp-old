@@ -1,0 +1,22 @@
+services:
+  web:
+    build: .
+    container_name: baronette_webapp
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./assets:/usr/local/apache2/htdocs/assets
+      - ./index.html:/usr/local/apache2/htdocs/index.html
+      - ./conf-user-panel.html//usr/local/apache2/htdocs/conf-user-panel.html
+      - ./founders.html//usr/local/apache2/htdocs/founders.html
+      - ./isolibrary.html//usr/local/apache2/htdocs/isolibrary.html
+      - ./login.html//usr/local/apache2/htdocs/login.html
+      - ./main_downloads.html//usr/local/apache2/htdocs/main_downloads.html
+      - ./NDS-ROMS.html//usr/local/apache2/htdocs/NDS-ROMS.html
+      - ./post-register.html//usr/local/apache2/htdocs/post-register.html
+      - ./register.html//usr/local/apache2/htdocs/register.html
+      - ./utilitieslibrary.html//usr/local/apache2/htdocs/utilitieslibrary.html
+      - ./virtual-lab.html:/usr/local/apache2/htdocs/virtual-lab.html
+      - ./assets/conf/my-httpd.conf:/usr/local/apache2/conf/httpd.conf
+      - ./assets/conf/ssl.conf:/usr/local/apache2/conf/extra/ssl.conf
