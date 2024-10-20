@@ -16,7 +16,8 @@ document.getElementById('loginForm').addEventListener('submit', async function(e
         const data = await response.json();
 
         if (response.ok) {
-            // Si el login fue exitoso, redirigir a index.html
+            // Si el login fue exitoso, redirigir a index.html y almacenar la id del usuario
+            localStorage.setItem('user_id', data.user_id);
             window.location.href = 'index.html';
         } else {
             // Manejo de errores, mostrar mensaje
