@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Librería de ISO</title>
+    <!--Favicon-->
+    <link rel="shortcut icon" href="assets/images/barologo.ico" type="image/x-icon">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--CSS principal-->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!--CSS de las download boxes (By Patinni)-->
+    <link rel="stylesheet" href="assets/css/downloadbox.css">
+</head>
+<body data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <!--Botón del menú desplegable-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
+                aria-controls="offcanvasMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand mx-auto text-white" href="#">Baronette.es</a>
+            <!--Botón de modo claro/oscuro-->
+            <div class="d-flex align-items-center">
+                <!--Logo de página-->
+                <a href="#" class="me-3">
+                    <img src="assets/images/barologo.ico" alt="Logo" width="40" height="40">
+                </a>
+                <button id="toggleTheme" class="btn btn-outline-light">Modo claro</button>
+            </div>
+        </div>
+    </nav>
+    <!-- Menú lateral -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menú de navegación</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <!-- Subpáginas -->
+            <!--Orden de las subpáginas. Menú principal>Panel de usuario>Librería>Laboratorio Virtual>Administración-->
+            <ul class="list-unstyled">
+                <li><a href="index.html" class="nav-link">Página principal</a></li>
+                <li><a href="conf-user-panel.html" class="nav-link">Panel de usuario</a></li>
+                <li><a href="main_downloads.html" class="nav-link">Librería de descargas</a></li>
+                <li><a href="founders.html" class="nav-link">Administración</a></li>
+            </ul>
+            <!-- Widget -->
+            <div class="discord-widget mt-4">
+                <iframe src="https://discord.com/widget?id=1008056714395930724&theme=dark" allow></iframe>
+            </div>
+        </div>
+    </div>
+<!--Sección de descarga-->
+<section class="py-5 text-center">
+    <div class="container">
+        <div class="row justify-content-center">
+            <!--Primer botón-->
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                <div class="card bg-secondary text-white card-custom">
+                    <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                        <h5 class="card-title">Linux Mint</h5>
+                        <p class="card-text">Linux Mint es una distribución basada en Ubuntu, diseñada para ser fácil de usar, ideal para usuarios nuevos en Linux.</p>
+                        <a href="downloads/iso/linuxmint-21.2-cinnamon-64bit.iso" download class="btn custom-btn mt-auto w-100">Descargar Linux Mint</a>
+                    </div>
+                </div>
+            </div>
+            <!--Segundo botón-->
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                <div class="card bg-secondary text-white card-custom">
+                    <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                        <h5 class="card-title">Debian 12</h5>
+                        <p class="card-text">Debian 12 es una distribución de Linux robusta y estable, ideal para servidores.</p>
+                        <a href="downloads/iso/debian-12.1.0-amd64-DVD-1.iso" download class="btn custom-btn mt-auto w-100">Descargar Debian 12</a>
+                    </div>
+                </div>
+            </div>
+            <!--Tercer botón-->
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                <div class="card bg-secondary text-white card-custom">
+                    <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                        <h5 class="card-title">Clonezilla</h5>
+                        <p class="card-text">Clonezilla es una herramienta de clonación y recuperación de discos, ideal para hacer copias de seguridad y restaurar sistemas.</p>
+                        <a href="downloads/iso/clonezilla-live-3.0.3-22-amd64.iso" download class="btn custom-btn mt-auto w-100">Descargar Clonezilla</a>
+                    </div>
+                </div>
+            </div>
+            <!--Cuarto botón-->
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                <div class="card bg-secondary text-white card-custom">
+                    <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                        <h5 class="card-title">Arch Linux</h5>
+                        <p class="card-text">Arch Linux es una distribución ligera y personalizable que sigue un enfoque minimalista y "hazlo tú mismo". Ideal para masoquistas.</p>
+                        <a href="downloads/iso/archlinux-2023.09.01-x86_64.iso" download class="btn custom-btn mt-auto w-100">Descargar Arch Linux</a>
+                    </div>
+                </div>
+            </div>
+            <!--Quinto botón-->
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                <div class="card bg-secondary text-white card-custom">
+                    <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                        <h5 class="card-title">Nobara Linux</h5>
+                        <p class="card-text">Nobara es una distribución basada en Fedora que se enfoca en ofrecer un entorno listo para jugadores y creadores de contenido.</p>
+                        <a href="downloads/iso/nobara-38-20230920.iso" download class="btn custom-btn mt-auto w-100">Descargar Nobara Linux</a>
+                    </div>
+                </div>
+            </div>
+            <!--Sexto botón-->
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                <div class="card bg-secondary text-white card-custom">
+                    <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                        <h5 class="card-title">Windows 11</h5>
+                        <p class="card-text">Windows 11 es la última versión del sistema operativo de Microsoft, con una interfaz renovada y optimizaciones de rendimiento.</p>
+                        <a href="downloads/iso/windows11_22h2_x64.iso" download class="btn custom-btn mt-auto w-100">Descargar Windows 11</a>
+                    </div>
+                </div>
+            </div>
+            <!--Séptimo botón-->
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                <div class="card bg-secondary text-white card-custom">
+                    <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                        <h5 class="card-title">Tiny 11</h5>
+                        <p class="card-text">Tiny 11 es una versión ligera de Windows 11, diseñada para funcionar en hardware más antiguo o con menos recursos.</p>
+                        <a href="downloads/iso/tiny11.iso" download class="btn custom-btn mt-auto w-100">Descargar Tiny 11</a>
+                    </div>
+                </div>
+            </div>
+            <!--Octavo botón-->
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                <div class="card bg-secondary text-white card-custom">
+                    <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                        <h5 class="card-title">Ubuntu</h5>
+                        <p class="card-text">Ubuntu es una de las distribuciones de Linux más populares, conocida por su facilidad de uso y su amplia comunidad de soporte.</p>
+                        <a href="downloads/iso/ubuntu-22.04.3-desktop-amd64.iso" download class="btn custom-btn mt-auto w-100">Descargar Ubuntu</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-content">
+        <p>Licencia MIT. Todos los derechos reservados.</p>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="https://github.com/Propstg206">Repositorio de GitHub</a></li>
+            <li class="list-inline-item"><a href="https://es.wikipedia.org/wiki/Licencia_MIT">Información de licencia</a></li>
+            <li class="list-inline-item"><a href="mailto:alexpropstg@gmail.com">Contacto</a></li>
+        </ul>
+    </div>
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12401.707657363246!2d125.72661880911906!3d39.005573910591146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357e1b19cf2a008b%3A0xe34e794c30dde06!2sPyongyang%20Motor%20Factory!5e0!3m2!1ses!2ses!4v1729114240523!5m2!1ses!2ses" 
+            style="border:0; height: 100%; width: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</footer>
+<!--Scrips JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
