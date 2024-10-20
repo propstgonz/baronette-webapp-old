@@ -1,3 +1,5 @@
 # Environment files
 .env
 
+# Apache config
+conf/
