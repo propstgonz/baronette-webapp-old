@@ -44,7 +44,7 @@ form.addEventListener('submit', async function(event) {
          * el atributo action en el formulario, porque el envío se gestiona
          * por JS y no por el comportamiento nativo del formulario.
          */
-        const response = await fetch('http://localhost:3000/api/register', {
+        const response = await fetch(`${API_BASE_URL}/register`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

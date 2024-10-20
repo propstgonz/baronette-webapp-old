@@ -32,7 +32,7 @@ async function updatePassword() {
     };
 
     try {
-        const response = await fetch(`http://localhost:3000/api/change-password/${userId}`, {
+        const response = await fetch(`${API_BASE_URL}/change-password/${userId}`, {
             method: 'PATCH',
             headers: {
                 'Content-Type': 'application/json',
@@ -75,7 +75,7 @@ async function updateUserInfo() {
     }
 
     try {
-        const response = await fetch(`http://localhost:3000/api/update-user/${userId}`, {
+        const response = await fetch(`${API_BASE_URL}/update-user/${userId}`, {
             method: 'PATCH',
             headers: {
                 'Content-Type': 'application/json',
@@ -125,7 +125,7 @@ async function getAdminAccess() {
         const userId = await getUserID();
         
         // Llamada a la API para verificar si el usuario es administrador
-        const response = await fetch('http://localhost:3000/api/settings', {
+        const response = await fetch(`${API_BASE_URL}/settings`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -166,7 +166,7 @@ async function deleteSelectedUser() {
     }
 
     try {
-        const response = await fetch(`http://localhost:3000/api/delete-user/${selectedUser}`,
+        const response = await fetch(`${API_BASE_URL}/delete-user/${selectedUser}`,
             {
                 method: 'DELETE', headers: {'Content-Type': 'application/json',}
             }
@@ -191,7 +191,7 @@ async function deleteSelectedUser() {
 async function loadUnverifiedUsers() {
 
     try {
-        const response = await fetch('http://localhost:3000/api/unverified-users', {
+        const response = await fetch(`${API_BASE_URL}/unverified-users`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -241,7 +241,7 @@ async function validateUsers() {
     }
 
     try {
-        const response = await fetch('http://localhost:3000/api/verify-users', {
+        const response = await fetch(`${API_BASE_URL}/verify-users`, {
             method: 'POST',
             headers: {'Content-Type': 'application/json',},
             body: JSON.stringify({ usernames }), // Enviar los usernames seleccionados
@@ -266,7 +266,7 @@ async function validateUsers() {
 async function loadVerifiedUsers() {
     const selectElement = document.getElementById('userSelect');
     try {
-        const response = await fetch('http://localhost:3000/api/verified-users', {method: 'GET',});
+        const response = await fetch(`${API_BASE_URL}/verified-users`, {method: 'GET',});
         const users = await response.json();
 
         if (response.ok) {
@@ -290,7 +290,7 @@ async function deleteAccount() {
     try {
         const userId = await getUserID();
 
-        const response = await fetch('http://localhost:3000/api/delete-account', {
+        const response = await fetch(`${API_BASE_URL}/delete-account`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json',
