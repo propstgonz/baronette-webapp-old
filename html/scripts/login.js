@@ -1,4 +1,3 @@
-/*
 document.getElementById('loginForm').addEventListener('submit', async function(event) {
     event.preventDefault(); // Evitar el envío por defecto del formulario
 
@@ -29,4 +28,3 @@ document.getElementById('loginForm').addEventListener('submit', async function(e
         alert('Error al intentar iniciar sesión');
     }
 });
-*/
