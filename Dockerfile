@@ -1,6 +1,3 @@
-# Usar una imagen base de Apache
-FROM nginx:stable-bullseye-perl
+FROM httpd
 
-COPY html /usr/share/nginx/html
-COPY assets /usr/share/nginx/assets
-COPY scripts /usr/share/nginx/scripts
+COPY ./html/ /usr/local/apache2/htdocs/
