@@ -18,6 +18,7 @@
 - [Ejecuciones](#ejecuciones)
   - [Interacciones visuales](#interacciones-visuales)
   - [Interacciones con la API](#interacciones-con-la-api)
+- [Despliegue](#despliegue)
 - [Resumen](#resumen)
 
 ---
@@ -64,6 +65,10 @@ body {
 ```javascript
 const variable = 3;
 ```
+---
+
+# Despliegue
+
 ---
 
 # Resumen
