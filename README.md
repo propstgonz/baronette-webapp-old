@@ -69,7 +69,6 @@ baronette-webapp/
 Los archivos HTML que en este proyecto usan la 5ª versión global, los cuales son en sí las páginas de la web, están ubicadas en el directorio principal dentro de la carpeta "html". 
 Estos archivos están estandarizados ya que siguen una plantilla llamada "template.html" ubicada en raíz del documento web. Para hacer cualquier cambio de diseño, habría que modificar
 la plantilla y exportar los cambios a las demás páginas.
----
 ## CSS3
 Los archivos CSS que en este proyecto usan la 3ª versión global, que son las encargadas del diseño y colores de la web, están ubicadas en
 ---
