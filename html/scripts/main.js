@@ -26,19 +26,6 @@ offcanvasMenu.addEventListener('hidden.bs.offcanvas', function () {
  * de usuario registrado válido, redirige automáticamente
  * a la página de login 
  */
-document.addEventListener('DOMContentLoaded', async function() {
-    // Obtener el user_id almacenado en localStorage
-    const userId = localStorage.getItem('user_id');
-
-    if (!userId) {
-        // Si no hay user_id en el almacenamiento local, redirige a la página de login
-        window.location.href = 'login.html';
-        return;
-    }
-});
-
-
-// Función para obtener el user_id almacenado en localStorage
 async function getUserID() {
     const userId = localStorage.getItem('user_id');
     if (!userId) {
