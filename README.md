@@ -29,8 +29,7 @@ Básicamente este proyecto surgió como un trabajo académico, y en este documen
 ---
 # HTML5, CSS3 y Javascript
 Este proyecto usa principalmente estos lenguajes, y están organizados según la siguiente estructura.
-...
-
+```
 baronette-webapp/
 ├── html/
 │   ├── assets/
