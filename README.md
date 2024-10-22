@@ -70,15 +70,24 @@ Los archivos HTML que en este proyecto usan la 5ª versión global, los cuales s
 Estos archivos están estandarizados ya que siguen una plantilla llamada "template.html" ubicada en raíz del documento web. Para hacer cualquier cambio de diseño, habría que modificar
 la plantilla y exportar los cambios a las demás páginas.
 ## CSS3
-Los archivos CSS que en este proyecto usan la 3ª versión global, que son las encargadas del diseño y colores de la web, están ubicadas en
----
-## Javascript
+Los archivos CSS que en este proyecto usan la 3ª versión global, que son las encargadas del diseño y colores de la web, están ubicadas en html/assets/css.
+El archivo de configuración global es main.css, mientras que los otros es para darle estilo a ciertas partes de páginas no estandarizadas
+(como las páginas de descarga)
 
----
+## Javascript
+Los archivos .js que utiliza el proyecto se ubican en /html/scripts, que son los encargados de darle la funcionalidad a la página. 
+El archivo principal de scripts es main.js, la cual le da funciones a la mayor parte de las páginas. Hay otros archivos que se encargan
+del login o de las comunicaciones con las BBDD,
+
 # Estructura de la página web
 ## login.html
 ```html
-<head>Esto es una prueba</head>
+<head>
+Nombre de página y links CSS
+</head>
+<body>
+
+</body>
 ```
 ## register.html
 
