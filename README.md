@@ -24,7 +24,11 @@
 
 ---
 # Introducción
-Básicamente este proyecto surgió como un trabajo académico, y en este documento está todo lo necesario para poder desplegarlo e editar en él
+
+Básicamente este proyecto surgió como un trabajo académico, y en este documento está todo lo necesario para poder desplegarlo e editar en él.
+Está pensado para poder expandirlo con el tiempo, añadiendo más funciones, ya que el proyecto inicial está demasiado verde.
+
+En este documento solamente encontrarás el esqueleto web, el resto de componentes de la aplicación web se encuentran en sus respectivos repositorios.
 
 ---
 # HTML5, CSS3 y Javascript
@@ -33,16 +37,16 @@ Este proyecto usa principalmente estos lenguajes, y están organizados según la
 baronette-webapp/
 ├── html/
 │   ├── assets/
-│   │   └── css/................. Aquí se almacenan los archivos CSS, necesarios para los estilos de las páginas
-│   │   └── docs/................ Aquí se almacenan algunos documentos de texto necesarios
-│   │   └── fonts/............... Aquí se almacenan fuentes de texto
-│   │   └── images/.............. Aquí imágenes que vaya a utilizar la página web
+│   |   ├── css/................. Aquí se almacenan los archivos CSS, necesarios para los estilos de las páginas
+│   |   ├── docs/................ Aquí se almacenan algunos documentos de texto necesarios
+│   |   ├── fonts/............... Aquí se almacenan fuentes de texto
+│   |   ├── images/.............. Aquí imágenes que vaya a utilizar la página web
 │   │   └── downloads/........... Aquí se guardan las subcarpetas con los archivos disponibles en las páginas de descarga
 │   │
 │   ├── scripts/
-│   │   └── login.js............. Scripts del archivo login.html
-│   │   └── main.js.............. Scripts estandarizados que se usan en (casi) todas las páginas y añade sus funciones. Si no has iniciado sesión, te enviará a login.html
-│   │   └── register.js.......... Scripts que se comunida con la BBDD para registrar usuarios en el servidor
+│   |   ├── login.js............. Scripts del archivo login.html
+│   |   ├── main.js.............. Scripts estandarizados que se usan en (casi) todas las páginas y añade sus funciones. Si no has iniciado sesión, te enviará a login.html
+│   |   ├── register.js.......... Scripts que se comunida con la BBDD para registrar usuarios en el servidor
 │   │   └── settings.js.......... Scripts para conf-user-panel.html, en los cuales registra los cambios que haga el usuario o administrador
 │   │
 │   ├── index.html............... Página principal y de bienvenida.
@@ -116,6 +120,8 @@ Los siguientes documentos son los que usan esta plantilla:
 
 # Ejecuciones
 
+
+
 ## Interacciones visuales
 
 
@@ -131,7 +137,9 @@ const variable = 3;
 El despliegue de esta web es muy simple, ya que sólo necesita docker...
 
 # Resumen
-fin del documento
+
+Este proyecto es de libre uso siempre que no se use de forma comercial, es fácilmente editable y desplegable en Docker, el resto de la documentación sobre la
+API y la base de datos están en sus respectivos repositorios.
 
 # Fuentes
 Fuentes a las que recurrí para diseñar el html y css de este proyecto.
