@@ -3,15 +3,18 @@
     padding: 30px 20px;
     border: 2px solid #6c6257;
 }
+
 .custom-btn {
     background-color: #6c6257;
     color: white;
     border: 2px solid white;
 }
+
 .custom-btn:hover {
     background-color: #554f48;
     border-color: white;
 }
+
 .card-body {
     display: flex;
     flex-direction: column;
@@ -19,9 +22,11 @@
     align-items: center;
     text-align: center;
 }
+
 .card-title {
     font-size: 1.75rem;
 }
+
 .card-text {
     margin-bottom: 1rem;
 }
