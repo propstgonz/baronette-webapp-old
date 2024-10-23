@@ -95,6 +95,10 @@ img {
 img:hover {
     transform: scale(1.05);
 }
+.barocuadro{
+    width: 20%; 
+    height: auto;
+}
 .footer {
     background-color: #1c1c1c;
     color: #ffffff;
@@ -177,6 +181,12 @@ figure figcaption {
     text-align: center;
     color: gray;
 }
+.person-icon{
+    width: 100px;
+}
+.founder{
+    width: 125px !important;
+}
 /* Cambio de estilados para movil*/
 @media (max-width: 768px) {
     .container {
@@ -244,7 +254,20 @@ figure figcaption {
         padding-top: 10vh;
         padding-bottom: 7.5vh;
     }
+    .footer{
+        flex-direction: column;
+    }
+    .map-container{
+        margin-left: auto !important;
+        margin-right: auto !important;
+        width: 50vw;
+    }
+    .footer-content{
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
 }
+/* Cambio de estilado para mejor visual en dispositivos más pequeños */
 @media (max-width: 333px){
     .name-logo{
         margin-top: 3vh;

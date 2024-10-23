@@ -98,7 +98,7 @@ async function updateUserInfo() {
 }
 
 
-// función para escribir el nombre de usuario en el panel principal
+// Función para escribir el nombre de usuario en el panel principal
 function displayUserName() {
     const userName = localStorage.getItem('user_name');
     const usernameInput = document.getElementById('username');
@@ -286,6 +286,7 @@ async function loadVerifiedUsers() {
     }
 }
 
+//Función para borrar una cuenta a traves del panel
 async function deleteAccount() {
     try {
         const userId = await getUserID();
