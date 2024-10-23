@@ -1,8 +1,8 @@
 services:
   baronette-webapp:
     container_name: baronette-webapp
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: httpd
+    volumes:
+      - ./html/:/usr/local/apache2/htdocs/
     ports:
       - 80:80

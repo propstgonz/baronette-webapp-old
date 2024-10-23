@@ -20,23 +20,26 @@
     <!-- Navegador superior -->
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
-            <!--Botón del menú desplegable-->
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
+            <!-- Botón del menú desplegable -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
+                aria-controls="offcanvasMenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand mx-auto text-white" href="#">Baronette.es</a>
-            <!--Botón de modo claro/oscuro-->
-            <div class="d-flex align-items-center">
-                <!--Logo de página-->
-                <a href="#" class="me-3">
+            <div class="d-flex align-items-center name-logo">
+                <a class="navbar-brand mx-auto text-white" href="#">Baronette.es</a>
+                <!-- Logo de página -->
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1" class="logotype" width="10">
                     <img src="assets/images/barologo.ico" alt="Logo" width="40" height="40">
                 </a>
+            </div>
+            <!-- Botón de modo claro/oscuro -->
+            <div class="d-flex align-items-center sub-nav">
                 <button id="toggleTheme" class="btn btn-outline-light">Modo claro</button>
             </div>
         </div>
     </nav>
     <!-- Menú lateral -->
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+    <div class="offcanvas offcanvas-start offcanvas-resized" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menú de navegación</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -104,7 +107,7 @@
             <h3 class="card-title">Panel de administración</h3>
             <div class="mb-3">
                 <div>  
-                    <!--Aquí irá una tabla de los usuarios sin validar-->
+                    <!-- TODO Aquí irá una tabla de los usuarios sin validar-->
                     <h2 class="text-center mb-4">Usuarios sin Verificar</h2>
                     <div class="row justify-content-center">
                         <div class="col-md-12">
