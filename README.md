@@ -80,37 +80,46 @@ El archivo principal de scripts es main.js, la cual le da funciones a la mayor p
 del login o de las comunicaciones con las BBDD,
 
 # Estructura de la página web
-## login.html
-```html
-<head>
-Nombre de página y links CSS
-</head>
-<body>
 
-</body>
-```
-## register.html
-
-## index.html
+Toda la web se estructura tras una plantilla, llamada "template.html" ubicada en raíz, en la cual marca el diseño que debe de seguir la página.
+Todas las páginas de contenido deberán de seguir la plantilla, excepto en casos especiales de ser necesario por el bien del diseño.
 
 ### Barra de navegación superior
 
+Esta barra básicamente es la manera principal de poder navegar por las diversas páginas
+que contiene la web.
+
 ### Cuerpo de la página
+
+Tras copiar la plantilla, en la línea 57 (actualmente) abajo de un comentario de "Inserta aquí el contenido" es donde debe ir el resto del contenido,
+ya sean imágenes, texto, widgets, entre otros, sin excepciones. 
 
 ### Barra de navegación lateral
 
+Esta barra contiene los links directos a las páginas, además de un widget de Discord, el cual
+se podría remover en caso de necesitar espacio para más links.
+
 ### Pie de página
 
-### Documentos html que heredan la estructura de index.html
+El pie de página está estandarizado para contener contacto, link al github, información sobre la licencia y un mapa, ya que es un requisito de
+entrega.
 
+### Documentos html que heredan la estructura de template.html
 
+Todos los documentos de esta web siguen una plantilla llamada "template.html", que es la base del diseño de la web.
+
+Los siguientes documentos son los que usan esta plantilla:
 
 # Estilos
 
 
 
 # Ejecuciones
+
 ## Interacciones visuales
+
+
+
 ## Interacciones con la API
 ```javascript
 const variable = 3;
@@ -119,9 +128,11 @@ const variable = 3;
 
 # Despliegue
 
----
+El despliegue de esta web es muy simple, ya que sólo necesita docker...
 
 # Resumen
 fin del documento
 
 # Fuentes
+Fuentes a las que recurrí para diseñar el html y css de este proyecto.
+---
