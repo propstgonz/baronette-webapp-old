@@ -13,26 +13,28 @@
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body data-bs-theme="dark">
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-            <!--Botón del menú desplegable-->
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
-                aria-controls="offcanvasMenu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+        <!-- Botón del menú desplegable -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
+            aria-controls="offcanvasMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="d-flex align-items-center name-logo">
             <a class="navbar-brand mx-auto text-white" href="#">Baronette.es</a>
-            <!--Botón de modo claro/oscuro-->
-            <div class="d-flex align-items-center">
-                <!--Logo de página-->
-                <a href="#" class="me-3">
-                    <img src="assets/images/barologo.ico" alt="Logo" width="40" height="40">
-                </a>
-                <button id="toggleTheme" class="btn btn-outline-light">Modo claro</button>
-            </div>
+            <!-- Logo de página -->
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1" class="logotype" width="10">
+                <img src="assets/images/barologo.ico" alt="Logo" width="40" height="40">
+            </a>
         </div>
-    </nav>
+        <!-- Botón de modo claro/oscuro -->
+        <div class="d-flex align-items-center sub-nav">
+            <button id="toggleTheme" class="btn btn-outline-light">Modo claro</button>
+        </div>
+    </div>
+</nav>
     <!-- Menú lateral -->
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+    <div class="offcanvas offcanvas-start offcanvas-resized" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menú de navegación</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -59,22 +61,22 @@
       <p class="mb-5 text-secondary">Gente que se apoyó el proyecto, ya sea directamente o indirectamente (Solo tags en línea por protección de datos).</p>
       <div class="row">
         <div class="col-md-3 col-sm-6 mb-4">
-          <img src="assets/images/pfps founders/mezzenas.png" class="rounded-circle shadow-lg img-fluid mb-3" alt="Mezzenas">
+          <img src="assets/images/pfps founders/mezzenas.png" class="rounded-circle shadow-lg img-fluid mb-3 person-icon" alt="Mezzenas">
           <h5 class="text-white">Mezzenas</h5>
           <p class="text-secondary">Ingeniero de datos senior, se tanqueó la mayor parte del proyecto.</p>
         </div>
         <div class="col-md-3 col-sm-6 mb-4">
-          <img src="assets/images/pfps founders/patinni.png" class="rounded-circle shadow-lg img-fluid mb-3" alt="Patinni">
+          <img src="assets/images/pfps founders/patinni.png" class="rounded-circle shadow-lg img-fluid mb-3 person-icon" alt="Patinni">
           <h5 class="text-white">Patinni</h5>
           <p class="text-secondary">Programador junior, el que arregló errores de código garrafales front-end.</p>
         </div>
         <div class="col-md-3 col-sm-6 mb-4">
-          <img src="assets/images/pfps founders/calvo.png" class="rounded-circle shadow-lg img-fluid mb-3" alt="Calvo">
+          <img src="assets/images/pfps founders/calvo.png" class="rounded-circle shadow-lg img-fluid mb-3 person-icon" alt="Calvo">
           <h5 class="text-white">El Calvo</h5>
           <p class="text-secondary">Nadie realmente relevante, también conocido como x(f)andasbolas.</p>
         </div>
         <div class="col-md-3 col-sm-6 mb-4">
-          <img src="assets/images/pfps founders/ReficulMcdonnalds.jpg" class="rounded-circle shadow-lg img-fluid mb-3" alt="Reficul">
+          <img src="assets/images/pfps founders/ReficulMcdonnalds.jpg" class="rounded-circle shadow-lg img-fluid mb-3 person-icon" alt="Reficul">
           <h5 class="text-white">Reficul</h5>
           <p class="text-secondary">Fan de Mogeko Castle, probablemente tiene problemas mentales muy serios. Como el calvo, está para decorar.</p>
         </div>
@@ -82,7 +84,7 @@
     </div>
     <h2 class="mb-4 text-white">Fundador y host de la página</h2>
       <div class="col-md-3 mx-auto">
-        <img src="assets/images/pfps founders/propstg.png" class="rounded-circle shadow-lg img-fluid mb-3" alt="Propstg">
+        <img src="assets/images/pfps founders/propstg.png" class="rounded-circle shadow-lg img-fluid mb-3 person-icon founder" alt="Propstg">
         <h5 class="text-white">Propstg</h5>
         <p class="text-secondary">De los 2 primeros programadores, el más novato pero fue quién tuvo la idea y por lo tanto tiene el título bonito.</p>
       </div>

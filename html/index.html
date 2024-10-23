@@ -19,19 +19,21 @@
                 aria-controls="offcanvasMenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand mx-auto text-white" href="#">Baronette.es</a>
-            <!-- Botón de modo claro/oscuro -->
-            <div class="d-flex align-items-center">
+            <div class="d-flex align-items-center name-logo">
+                <a class="navbar-brand mx-auto text-white" href="#">Baronette.es</a>
                 <!-- Logo de página -->
-                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1" class="me-3">
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1" class="logotype" width="10">
                     <img src="assets/images/barologo.ico" alt="Logo" width="40" height="40">
                 </a>
+            </div>
+            <!-- Botón de modo claro/oscuro -->
+            <div class="d-flex align-items-center sub-nav">
                 <button id="toggleTheme" class="btn btn-outline-light">Modo claro</button>
             </div>
         </div>
     </nav>
     <!-- Menú lateral -->
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+    <div class="offcanvas offcanvas-start offcanvas-resized" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menú de navegación</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -59,15 +61,15 @@
     </div>    
     </nav>
 <!-- Contenido de la página -->
-    <div style="padding-right: 5%;">
+    <div class="main-div">
         <div class="text-center">
             <h1>Baronette</h1>
-            <img src="assets/images/barocuadro.jpg" alt="barocuadro" style="width: 20%; height: auto;"><br><br>
+            <img src="assets/images/barocuadro.jpg" alt="barocuadro" class="barocuadro"><br><br>
             <p>Haría el chiste, pero ahora es un entorno SFW semi-profesional (No me lo creo ni yo)</p>
         </div>
-        <div style="margin-left: 1%;">
-            <h1>- ¿Qué es esta página y cómo surgió?</h1>
-            <div style="margin-left: 3%;" class="textaco-1">
+        <div class="page-origin">
+            <h1>¿Qué es esta página y cómo surgió?</h1>
+            <div class="textaco-1">
                 <p class="text-justified">Básicamente inicialmente fue un proyecto de bromas con mis amigos, ya que como me aburría mucho este verano, 
                     hice limpieza profunda en mi habitación, me encontré los componentes y algunos restos de mi antiguo ordenador,
                     así que lo monte, le instalé Debian 12 y empecé a cacharrear con él. Y mientras una vez reinstalaba Debian porque me cargué algo,
@@ -75,12 +77,6 @@
                     De ahí llamé a mi amigo "Patinni" (No voy a dar nombres reales) y empezamos a hacer la primera versión, 
                     que simplemente era una plantilla modificada por él que era totalmente de bromas.
                     <br><br>
-                    <figure style="float: right; width: 30%; margin-left: 20px;">
-                        <img src="assets/images/barocuadro.jpg" alt="Cuadro de Baronette" style="width: 100%; height: auto;">
-                        <figcaption style="font-size: 12px; text-align: center; color: gray;">
-                            Cuadro de Baronette - Versión 2023
-                        </figcaption>
-                    </figure>
                     Tras ello y seguir cacharreando, modifiqué varias veces esa página por mí mismo para que estuviese más a mi gusto,
                     pero como no me llegaba a convencer y ya estaba obteniendo conocimientos de HTML, decidí que haría una nueva versión
                     completamente nueva, pero siempre me dio pereza, hasta que tuve un proyecto en mi instituto de "Aplicaciones Web" y de 
@@ -99,6 +95,14 @@
                     página son añadirle muchos más módulos, para convertirla en una herramienta para mí y algunos amigos, además como
                     CV, ya que así puedo demostrar un poco mis conocimientos, ya que además todo está subido en <a href="https://github.com/Propstg206">GitHub</a>.
                 </p>
+            </div>
+            <div class="imagen">
+                <figure class="div-baronette">
+                        <img src="assets/images/barocuadro.jpg" alt="Cuadro de Baronette" class="baronette-picture">
+                        <figcaption style="font-size: 12px; text-align: center; color: gray;">
+                            Cuadro de Baronette - Versión 2023
+                        </figcaption>
+                 </figure>
             </div>
         </div>
     </div>
