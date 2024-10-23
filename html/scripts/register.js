@@ -63,7 +63,7 @@ form.addEventListener('submit', async function(event) {
              * solamente en un pop-up. 
              */
             alert('¡Te has registrado correctamente!');
-            window.location.href = "post-register.html"; // Me refiero a esto
+            window.location.href = "post-register.html";
         } else {
             alert(result.message || 'Error en el registro.');
         }
