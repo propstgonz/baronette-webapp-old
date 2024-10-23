@@ -116,7 +116,18 @@ Los siguientes documentos son los que usan esta plantilla:
 
 # Estilos
 
+Los documentos de estilado se reducen en un par, siendo uno usado en multiples htmls, principalmente todos los que tengan que ver con la pagina en si,
+siendo este el archivo "main.css". El archivo "downloadbox.css" se utiliza para darle el estilado a las cajas de descargas de las paginas.
+Las páginas de inicio de sesion, registro, y demas utilizan otros archivos css, siendo estos "register.css" y "login.css", los cuales se separan del css
+principal por completo.
 
+El estilado consiste en una cabezera, un cuerpo, y un footer. La cabezera y el footer se comparten entre todas las páginas.
+La cabezera consiste en un boton para desplegar un menu en la izquierda de la página, el nombre y logo de la página, y un botón para cambiar el modo
+oscuro y el modo claro.
+El cuerpo es lo que mas cambia en cada subpágina, siendo el contenido ordenado y estilado.
+El footer consiste únicamente en la acreditación de derechos, y un mapa de google maps.
+
+El estilado de la página esta pensado para cualquier tamaño razonable de pantalla.
 
 # Ejecuciones
 
