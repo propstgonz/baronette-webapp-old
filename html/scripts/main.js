@@ -24,7 +24,7 @@ offcanvasMenu.addEventListener('hidden.bs.offcanvas', function () {
 
 /* Cuando se carga la página, si no hay almacenado un id
  * de usuario registrado válido, redirige automáticamente
- */
+
 async function getUserID() {
     const userId = localStorage.getItem('user_id');
     if (!userId) {
@@ -33,3 +33,4 @@ async function getUserID() {
     }
     return userId;
 };
+ */
