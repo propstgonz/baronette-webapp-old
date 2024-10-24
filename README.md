@@ -118,10 +118,6 @@ El cuerpo de la página ha sido diseñado con un enfoque **responsive**, lo que 
 
 ### Barra de navegación lateral
 
-El **cuerpo de la página** es la sección principal donde se muestra el contenido específico de cada página web. Al seguir la estructura definida en la plantilla `template.html`, el contenido del cuerpo se coloca en la línea designada (actualmente la línea 57, bajo el comentario "Inserta aquí el contenido"). Esta área es flexible, permitiendo la inserción de texto, imágenes, formularios, widgets y otros elementos interactivos según sea necesario. Cada subpágina tiene su propio contenido único, pero la organización y el diseño del cuerpo de la página siguen reglas claras para mantener la coherencia visual y funcional entre las diferentes secciones del sitio.
-
-### Barra de navegación lateral
-
 La **barra de navegación lateral** complementa la barra de navegación superior al ofrecer enlaces directos a las páginas y secciones adicionales de la aplicación. Esta barra permite a los usuarios acceder a diferentes partes del sitio de manera rápida y sencilla, sin necesidad de regresar a la barra de navegación principal. Entre los elementos destacados de la barra lateral se incluye un **widget de Discord**, que proporciona un acceso directo a la comunidad del proyecto. La barra lateral está diseñada para ser intuitiva y accesible, contribuyendo a una experiencia de navegación fluida y eficiente.
 
 
